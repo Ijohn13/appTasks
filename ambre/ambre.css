@@ -1,0 +1,111 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'AlphaCentauri', sans-serif;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+#container-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 20px;
+    color: rgb(132, 40, 114);
+}
+
+#btn-logout {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: 'AlphaCentauri', sans-serif;
+}
+
+a:hover {
+    color: white;
+}
+
+#btn-logout {
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+#btn-logout {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-logout:hover {
+    background-color: rgb(216, 123, 16);
+    color: #000;
+}
+
+#container-table {
+    background-color: rgba(248, 243, 243, 0.9);
+    height: 600px;
+    width: 350px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px
+    vertical-align: middle;
+}
+
+th {
+    color: #000;
+}
+
+td {
+    height: 92px;
+}
+
+.name-task {
+    color: rgb(132, 40, 114);
+}
+
+.day {
+    color: orange;
+}
+
+#container-reset {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-reset {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'AlphaCentauri', sans-serif;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#btn-reset:hover {
+    background-color: rgb(216, 123, 16);
+    color: #000;
+}

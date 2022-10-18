@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <link rel="stylesheet" href="./ambre.css"/>
+    <title>AmbreTask</title>
+</head>
+<body>
+    <main>
+        <head>
+            <div id="container-head">
+                <div id="container-title">
+                    <h1>AMBRE</h1>
+                </div>
+                <div id="container-logout">
+                    <button onclick="redirectHome()" id="btn-logout"><a>Se deconnecter</a></button>
+                </div>
+            </div>
+        </head>
+        <div id="container-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Taches</th>
+                        <th>Jour de la semaine</th>
+                        <th>Fait</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name-task">Etendre le linge</td>
+                        <td class="day">Mercredi</td>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-task">Mettre la table</td>
+                        <td class="day">Samedi (midi)</td>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-task">Debarrasser la table</td>
+                        <td class="day">Mercredi</td>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-task">Menage chambre</td>
+                        <td class="day">Dimanche</td>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-task">Aspirateur salle à manger / cuisine</td>
+                        <td class="day">Jeudi (soir)</td>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name-task">Faire un calin a ses parents</td>
+                        <td class="day">Au choix</td>
+                        <td>
+                            <input name="checkbox" type="checkbox">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="container-reset"><button onclick="reset_checkbox()" id="btn-reset">Reset</button></div>
+    </main>
+
+    <script src="../auth/auth.js"></script>
+</body>
+</html>
