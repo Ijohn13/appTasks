@@ -11,7 +11,7 @@ function loginAmbre() {
     }
 
 function urlAmbre() {
-    window.location.href = "../ambre/ambre.html";
+    window.location.href = "../pages/ambre.html";
 }
 
 function loginElias() {
@@ -27,13 +27,13 @@ function loginElias() {
     }
 
 function urlElias() {
-    window.location.href = "../elias/elias.html";
+    window.location.href = "../pages/elias.html";
 }
 
 function redirectHome() {
     window.location.href = "../index.html";
 }
 
-function reset_checkbox() {
-    window.location.reload();
-}
+// function reset_checkbox() {
+//     window.location.reload();
+// }
