@@ -45,6 +45,15 @@ function redirectHome() {
     window.location.href = "../index.html";
 }
 
+function reset_checkbox() {
+    const clist = document.getElementsByClassName('box');
+
+    for (let i = 0; i < clist.length; i++) {
+        clist[i].checked = false;
+    }
+    localStorage.clear();
+}
+
 let boxes = document.getElementsByClassName('box').length;
 
 function save() {	
