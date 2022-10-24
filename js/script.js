@@ -44,30 +44,3 @@ function urlElias() {
 function redirectHome() {
     window.location.href = "../index.html";
 }
-
-function reset_checkbox() {
-    const clist = document.getElementsByClassName('box');
-
-    for (let i = 0; i < clist.length; i++) {
-        clist[i].checked = false;
-    }
-    localStorage.clear();
-}
-
-let boxes = document.getElementsByClassName('box').length;
-
-function save() {	
-    for(let i = 1; i <= boxes; i++){
-	    var checkbox = document.getElementById(String(i));
-        localStorage.setItem("checkbox" + String(i), checkbox.checked);	
-    }
-}
-
-//for loading
-for(let i = 1; i <= boxes; i++){
-    if(localStorage.length > 0){
-        var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
-        document.getElementById(String(i)).checked = checked;
-    }
-}
-window.addEventListener('change', save);
